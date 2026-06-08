@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>ZenAfrik | Bien-être Moderne & Pan-Africain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300&display=swap" rel="stylesheet"/>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .font-label { font-family: 'Montserrat', sans-serif; }
+
+        /* EFFET REVEAL AU SCROLL */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* FOND SAVANE AVEC GRADIENT ZENAFRIK */
+        .hero-savane {
+            background: linear-gradient(135deg, rgba(45, 90, 39, 0.7) 0%, rgba(255, 140, 0, 0.4) 100%), 
+                        url('https://lh3.googleusercontent.com/aida/AP1WRLtSWGaCWLYBUlmXc4XoW9c3Tc5zs-wqslnzpZ1l44DoU9yVRi13bqTeE5iwytYsMwoy7zgD8Z1-wbQ2fydBB7T2zLqBiQpYWipX1BIyYdkmpis3vz91XucsRwF7faLMtsyZnlttFYT1kAMWUeFAIttJGPgJWuWHQLqLDtq4hooxHY7WW2a_QpFs6lsCyAEDsZJl2bP8_KkDI3KfaxWAmwnrKcVaEjxYjaKYxnE08b9rkIBgPMStB2NI');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-[#fcf9f4] text-[#1c1c19]">
+
+    <!-- BARRE DE NAVIGATION -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+            <div class="flex items-center gap-4">
+                <!-- LOGO PLUS GRAND -->
+                <img alt="ZenAfrik Logo" class="h-14 w-auto" src="images/logo.png"/>
+                <span class="font-display text-2xl font-bold text-[#001629]">ZenAfrik</span>
+            </div>
+            <div class="hidden md:flex gap-8 items-center font-label text-[12px] tracking-widest uppercase">
+                <a class="text-[#2d5a27] border-b-2 border-[#2d5a27] pb-1" href="#services">Services</a>
+                <a class="text-gray-500 hover:text-[#2d5a27]" href="#mission">Mission</a>
+                <a class="text-gray-500 hover:text-[#2d5a27]" href="#temoignages">Témoignages</a>
+                <button class="bg-[#001629] text-white px-6 py-3 rounded-lg hover:bg-black transition-all">S'inscrire</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (SAVANE) -->
+    <section class="hero-savane h-screen flex items-center px-6">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="max-w-3xl space-y-6">
+                <span class="font-label text-white/80 text-xs tracking-[0.2em] uppercase">Un soutien adapté à nos réalités</span>
+                <h1 class="font-display text-5xl md:text-7xl text-white leading-tight">Le bien-être à <br> <span class="text-orange-400">la source.</span></h1>
+                <p class="text-lg text-white/90 max-w-xl">Prenez soin de votre esprit, de votre corps et de votre alimentation avec ZenAfrik.</p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-6">
+                    <button class="bg-orange-500 text-white px-8 py-4 rounded-lg font-label text-xs tracking-widest hover:bg-orange-600 transition-all shadow-xl">COMMENCER MON PARCOURS</button>
+                    <button class="border border-white/40 backdrop-blur-md text-white px-8 py-4 rounded-lg font-label text-xs tracking-widest hover:bg-white/10 transition-all">DÉCOUVRIR NOS SERVICES</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES AVEC TES IMAGES -->
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto reveal">
+        <div class="text-center mb-16">
+            <h2 class="font-display text-4xl text-[#001629]">Une approche holistique</h2>
+            <p class="text-gray-500 mt-4">Pensée pour l'Afrique, portée par l'excellence.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- SANTÉ MENTALE -->
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden rounded-xl h-[400px] mb-6">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-duration-700" src="images/yoga-1.jpg" alt="Yoga et Méditation"/>
+                </div>
+                <h3 class="font-display text-2xl mb-2">Santé Mentale</h3>
+                <p class="text-gray-600 text-sm">Méditation guidée et groupes de parole anonymes.</p>
+            </div>
+
+            <!-- SPORT -->
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden rounded-xl h-[400px] mb-6">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-duration-700" src="images/sport-poids.jpg" alt="Sport et Fitness"/>
+                </div>
+                <h3 class="font-display text-2xl mb-2">Santé Physique</h3>
+                <p class="text-gray-600 text-sm">Séances de sport virtuelles et coaching adapté.</p>
+            </div>
+
+            <!-- NUTRITION -->
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden rounded-xl h-[400px] mb-6">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-duration-700" src="images/nutrition-1.jpg" alt="Nutrition Africaine"/>
+                </div>
+                <h3 class="font-display text-2xl mb-2">Nutrition Locale</h3>
+                <p class="text-gray-600 text-sm">Rééquilibrage alimentaire basé sur nos produits du terroir.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACT & CHIFFRES -->
+    <section class="bg-[#001629] py-20 reveal">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <span class="block font-display text-4xl text-orange-400">2000+</span>
+                <span class="font-label text-[10px] text-gray-400 tracking-widest uppercase">Patients Accompagnés</span>
+            </div>
+            <div>
+                <span class="block font-display text-4xl text-orange-400">50+</span>
+                <span class="font-label text-[10px] text-gray-400 tracking-widest uppercase">Praticiens Certifiés</span>
+            </div>
+            <div>
+                <span class="block font-display text-4xl text-orange-400">15</span>
+                <span class="font-label text-[10px] text-gray-400 tracking-widest uppercase">Pays Couverts</span>
+            </div>
+            <div>
+                <span class="block font-display text-4xl text-orange-400">4.9/5</span>
+                <span class="font-label text-[10px] text-gray-400 tracking-widest uppercase">Satisfaction</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIE COMMUNAUTÉ (TES IMAGES DE GROUPE) -->
+    <section class="py-24 px-6 max-w-7xl mx-auto reveal">
+        <div class="grid md:grid-cols-2 gap-8">
+            <img class="rounded-xl h-80 w-full object-cover shadow-lg" src="images/sport-marche.jpg" alt="Marche ZenAfrik"/>
+            <img class="rounded-xl h-80 w-full object-cover shadow-lg" src="images/sport-fitness.jpg" alt="Fitness Collectif"/>
+        </div>
+    </section>
+
+    <!-- FOOTER AVEC CONTACTS CAMEROUN -->
+    <footer class="bg-white border-t border-gray-100 pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+            <div class="col-span-2">
+                <img src="images/logo.png" class="h-12 mb-6" alt="Logo ZenAfrik"/>
+                <p class="text-gray-500 max-w-sm mb-6">ZenAfrik : L'excellence du bien-être pour les réalités africaines.</p>
+                <div class="text-[#2d5a27] font-bold">
+                    <p>Contactez-nous (Cameroun) :</p>
+                    <p class="text-xl">+237 697 58 07 20 / 6 71 29 26 12</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-label text-[10px] tracking-widest uppercase text-orange-500 mb-6">Navigation</h4>
+                <ul class="text-sm text-gray-600 space-y-4">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Notre Mission</a></li>
+                    <li><a href="#">Experts</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-label text-[10px] tracking-widest uppercase text-orange-500 mb-6">Légal</h4>
+                <ul class="text-sm text-gray-600 space-y-4">
+                    <li><a href="#">Confidentialité</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center text-[10px] text-gray-400 mt-20 uppercase tracking-widest">© 2024 ZenAfrik. Tout droits réservés.</p>
+    </footer>
+
+    <script>
+        // ANIMATION AU SCROLL
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
